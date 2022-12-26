@@ -27,6 +27,7 @@ model Post {
 }
 
 model User {
+  // anything other than @default is mandatory for that use to create 
   id        String    @id @default(uuid())
   createdAt DateTime  @default(now())
   username  String    @unique
